@@ -77,19 +77,19 @@ class Result
 
         if (rows < 2 || rows > 300 || columns < 2 || columns > 300)
         {
-            Console.WriteLine($"Constraint broken: 2 <= m, n <= 300. Provided m={rows}, n={columns}.");
+            Console.WriteLine($"Constraint broken: rows and columns must be >= 2 and <= 300. Provided rows={rows}, columns={columns}.");
             return false;
         }
 
         if (r < 1 || r > 1000000000)
         {
-            Console.WriteLine($"Constraint broken: 1 <= r <= 10^9. Provided r={r}.");
+            Console.WriteLine($"Constraint broken: r must be >= 1 and <= 1000000000. Provided r={r}.");
             return false;
         }
 
         if (Math.Min(rows, columns) % 2 != 0)
         {
-            Console.WriteLine($"Constraint broken: min(m, n) % 2 = 0. Provided m={rows}, n={columns}.");
+            Console.WriteLine($"Constraint broken: the minimum of rows and columns must be an even number. Provided rows={rows}, columns={columns}.");
             return false;
         }
 
@@ -99,7 +99,7 @@ class Result
             {
                 if (matrix[i][j] < 1 || matrix[i][j] > 100000000)
                 {
-                    Console.WriteLine($"Constraint broken: 1 <= matrix[i][j] <= 10^8. Provided matrix[{i}][{j}]={matrix[i][j]}.");
+                    Console.WriteLine($"Constraint broken: matrix values must be >= 1 and <= 100000000. Provided matrix[{i}][{j}]={matrix[i][j]}.");
                     return false;
                 }
             }
