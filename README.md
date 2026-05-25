@@ -8,7 +8,7 @@ Time complexity of the algorithm is O(rows*columns) - Every element in the matri
 
 Space complexity of the algorithm is O(rows*columns) - Requires a secondary 2D array to construc the final rotated state. 
 
-The algorithm first validates that the matrix dimensions are valid (2 isBiggerOrEqualTo rows, columns isSmallerOrEqualTo 300), the smallest dimension is even and the rotation factor is within bounds.
+The algorithm first validates that 1) the matrix dimensions are valid (2 isBiggerOrEqualTo rows, columns isSmallerOrEqualTo 300), 2) the smallest dimension is even and 3) the rotation factor is within bounds.
 
 The algorithm then calculates concentric ring layers using Math.min(rows, columns) / 2.
 
