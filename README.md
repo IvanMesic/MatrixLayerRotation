@@ -26,6 +26,7 @@ Expected input on the first line is 3 space seperated integers: m(rows) n(column
 Next m lines should contain n space seperate integers representing the rows of the matrix.
 
 Example input:
+
 4 4 2
 
 1 2 3 4
@@ -37,6 +38,7 @@ Example input:
 13 14 15 16
 
 Example output:
+
 3 4 8 12
 
 2 11 10 16
